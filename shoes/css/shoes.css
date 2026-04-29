@@ -8,7 +8,7 @@ body{
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  /*div 자식은 마진이 서로 겹침 현상이 발샟*/
+  /*div 자식은 마진이 서로 겹침 현상이 발생*/
   /*해결 방법은 부모에게 padding: 1px 주어서 해결*/
   padding: 1px;
   text-align: center;
