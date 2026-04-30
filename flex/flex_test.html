@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    .container {
+      background-color: powderblue;
+      height: 500px;
+      box-sizing: border-box;
+      padding-top: 5px;
+      display: flex;
+      /* flex-direction: column; */
+      /* 교차축의 중심으로 맞춤 */
+      align-items: center;
+      /* 주축의 중심으로 맞춤 */
+      justify-content: center;
+    }
+    .item {
+      width: 50px;
+      height: 50px;
+      background-color: tomato;
+      border: 1px solid white;
+      /* 가로 맞춤 */
+      text-align: center;
+      /* 세로 맞춤 */
+      align-content: center;
+      margin: 0 5px 5px 5px;
+    }
+
+    /* .item:nth-child(4) {
+      flex-grow: 2;
+    } */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- flex-grow = 다른 item들에 비해 배율설정 -->
+    <!-- flex-basis = 자기값보다 브라우저가 작아지면 희생 -->
+    <!-- flex-shirink = 자기 크기를 무조건 고집 -->
+    <!-- <div class="item" style="flex-basis: 400px; flex-shrink: 0;">1</div> -->
+    <div class="item" style="flex-grow: 2;">2</div>
+    <div class="item" style="flex-grow: 5;">3</div>
+    <div class="item" style="flex-grow: 8;">4</div>
+    <div class="item" style="flex-grow: 2;">5</div>
+  </div>
+
+  <script>
+  </script>
+</body>
+</html>
