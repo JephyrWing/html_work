@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    display: flex;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 1500px;
+    margin: auto;
+  }
+  header {
+    border-bottom: 1px solid gray;
+    text-align: center;
+    flex-grow: 2;
+  }
+  .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 7;
+  }
+  nav {
+    flex-basis: 150px;
+    flex-shrink: 0;
+    border-right: 1px solid gray;
+    height: 100%;
+  }
+  main {
+    flex-grow: 8;
+    text-align: justify;
+    padding: 10px;
+    column-count: 4;
+    column-width: 200px;
+    column-rule-color: aqua;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    /* direction: rtl; */
+  }
+  aside {
+    flex-basis: 150px;
+    flex-shrink: 0;
+    border-left: 1px solid gray;
+    height: 100%;
+  }
+   footer {
+    border-top: 1px solid gray;
+    text-align: center;
+    flex-grow: 1;
+  }
+</style>
+<body>
+  <div class="container">
+    <header>
+      <h1>Holy Grail Layout</h1>
+    </header>
+    <section class="content">
+      <nav>
+        <ul>
+          <li>main</li>
+          <li>about</li>
+          <li>help</li>
+        </ul>
+      </nav>
+      <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eligendi cumque officiis, ad laboriosam saepe magni repellendus autem aperiam possimus mollitia laudantium nobis ullam sint dignissimos architecto repudiandae quaerat vel.
+        Blanditiis eligendi aliquid quia perferendis minima suscipit libero fugiat? Deserunt voluptas eos dolore labore fugiat non dicta iste repellendus hic numquam quae id minus, illum itaque explicabo? Minus, quos quis?
+        Quas temporibus alias omnis tempora. Voluptatem perferendis similique, assumenda architecto, dicta eveniet ullam numquam voluptatibus deserunt asperiores cupiditate suscipit eos, fugit placeat dolor illum illo. Vel repudiandae maiores tenetur maxime?
+        Iure eum distinctio facilis dolore iste illum earum magni quam facere eveniet. Voluptate sed minima iste non vero. Provident nisi quae quisquam voluptatibus, quo quasi cum nam id placeat impedit!
+        Unde odit vero, soluta nam, omnis blanditiis temporibus, alias cum libero ipsa tempora perspiciatis recusandae! Vel voluptatibus vitae culpa tempore quia saepe ipsum dolore sequi? Quos ipsa dolore aspernatur ab.
+        Eligendi nesciunt et perspiciatis, corporis cumque nihil atque quos libero sequi molestias cum maiores officiis amet non nemo doloremque ut! Hic, ab. Nihil nulla perferendis earum iure, facilis officiis quas.</p>
+      </main>
+      <aside>
+        광고영역
+      </aside>
+    </section>
+    <footer>
+      <a href="https://www.naver.com">홈페이지</a>
+    </footer>
+  </div>
+</body>
+</html>
