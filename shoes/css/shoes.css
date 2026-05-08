@@ -117,17 +117,14 @@ div, input, textarea {
 .product-container {
   width: 80%;
   max-width: 1000px;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .product-container div {
-  /* float: left; */
-  width: 22%;
+  width: 25%;
   text-align: center;
 }
 
@@ -140,22 +137,28 @@ div, input, textarea {
     font-size: 40px;
   }
   .product-container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0, auto;
   }
-  .product-container>div {
-    /* 2개씩 한 줄 이라는 뜻 */
+  .product-container > div {
+    /* 한줄에 2개씩 이라는 뜻 */
     flex: 1 1 50%;
   }
 }
+
 /* 현재 브라우저 폭이 768px 이하가 되는 경우 */
 @media screen and (max-width: 768px) {
   .maintitle {
     font-size: 30px;
   }
-  .product-container>div {
-    /* 1개씩 한 줄 이라는 뜻 */
+  .product-container {
+    max-width: 600px;
+    margin: 0, auto;
+  }
+  .product-container > div {
+    /* 한줄에 1개씩 이라는 뜻 */
     flex: 1 1 100%;
+    margin: 0;
   }
 }
 /* 현재 브라우저 폭이 576px 이하가 되는 경우 */

@@ -1,4 +1,4 @@
-function check_submit(event) {
+function checkSubmit(event) {
   event.preventdefault();
 
   let name = document.querySelector(#name)
